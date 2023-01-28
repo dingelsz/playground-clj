@@ -1,0 +1,9 @@
+<E> = prec |neg | mul | div | sum | sub
+<prec> = <'('> E <')'>
+neg = <'-'> term
+mul = term <'*'> term
+div = term <'/'> term
+sum = term <'+'> term
+sub = term <'-'> term
+<term> = E | N
+<N> = #'[0-9]+'
